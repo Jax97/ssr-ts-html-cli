@@ -1,7 +1,8 @@
-import gulp from 'gulp';
+const gulp = require('gulp');
+const ts = require('gulp-typescript');
+const alias = require('gulp-ts-alias');
 // import watch from 'gulp-watch';
 // import babel from 'gulp-babel';
-import ts from 'gulp-typescript';
 
 const tsProject = ts.createProject('tsconfig.json'); // 创建增量编译的项目
 const entry = './src/server/**/*.ts';
@@ -20,7 +21,11 @@ function buildDev() {
   //     .pipe(tsProject())
   //     .pipe(gulp.dest('./dist'))
   // );
-  return gulp.src(entry).pipe(tsProject()).pipe(gulp.dest('./dist'));
+  return gulp
+    .src(entry)
+    .pipe(alias({ configuration: tsProject.config }))
+    .pipe(tsProject())
+    .pipe(gulp.dest('./dist'));
 }
 
 // 生产环境

@@ -15,8 +15,11 @@
    <!-- 1. gulp-watch 监听服务启动 注意看 gulp-watch 的使用 待研究 -->
    <!-- 2. gulp-babel 将 es6 转为 es5 。 使用了gulp-typescripte 就不需要gulp-babel。-->
    1. gulp.watch 监听服务启动 注意看 gulp.watch 的使用
-7. module-alias 对server中的文件夹起别名
-8. 使用koa-swig对模板进行解析
+7. gulp-ts-alias 对server中的ts文件起别名
+8. 配置controllers和koa-router，启动基本的多页面
+9. 配置models打通controller层和model层
+10. 使用koa-swig对模板进行解析
+
 
 ```
 
@@ -30,11 +33,15 @@
 
 ```
 
+#### 共同配置
+
+1. 配置 typedoc 将 ts 的接口注释输出到 docs/tsdoc
+
 <!-- TODO -->
 
-1. 配置 scripty
-2. gulp 流清洗
-3. 前端性能监控
+2. 配置 scripty
+3. gulp 流清洗
+4. 前端性能监控
 
 ### 注意事项
 

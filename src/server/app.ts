@@ -1,15 +1,16 @@
 import Koa from 'koa';
 import config from './config/index';
-import moduleAlias from 'module-alias';
+// import moduleAlias from 'module-alias';
+import routes from './controllers/index';
 const render = require('koa-swig');
 const { port, viewDIR } = config;
 import co from 'co';
 
-moduleAlias.addAliases({
-  '@root': __dirname,
-  '@controllers': __dirname + '/controllers',
-  '@models': __dirname + '/models',
-});
+// moduleAlias.addAliases({
+//   '@root': __dirname,
+//   '@controllers': __dirname + '/controllers',
+//   '@models': __dirname + '/models',
+// });
 const app: Koa = new Koa();
 
 app.context.render = co.wrap(
@@ -22,9 +23,10 @@ app.context.render = co.wrap(
   })
 );
 
-app.use(async (ctx) => {
-  ctx.body = 'hello world111';
-});
+routes(app);
+// app.use(async (ctx) => {
+//   ctx.body = 'hello world111';
+// });
 
 app.listen(port, () => {
   console.log('服务启动成功: ', `http://localhost:${port}`);

@@ -4,10 +4,9 @@ type config = {
   port: number;
   viewDIR: string;
 };
-
 let config: config = {
   port: 8000,
-  viewDIR: join(__dirname, 'views'),
+  viewDIR: join(__dirname, '..', 'views'),
 };
 
 if (process.env.NODE_ENV == 'development') {
