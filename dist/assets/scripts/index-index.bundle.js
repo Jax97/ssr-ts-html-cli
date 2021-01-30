@@ -24,7 +24,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
   \**********************************************/
 /***/ (() => {
 
-eval("/* .components_banner {\r\n  color: violet;\r\n} */\r\n\n\n//# sourceURL=webpack://hjx-ssr-cli/./src/web/components/banner/banner.css?");
+eval("/* .components_banner {\n  color: violet;\n} */\n\n\n//# sourceURL=webpack://hjx-ssr-cli/./src/web/components/banner/banner.css?");
 
 /***/ }),
 
@@ -35,7 +35,7 @@ eval("/* .components_banner {\r\n  color: violet;\r\n} */\r\n\n\n//# sourceURL=w
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _banner_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./banner.css */ \"./src/web/components/banner/banner.css\");\n/* harmony import */ var _banner_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_banner_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\nconst banner = {\r\n  init() {\r\n    console.log('banner ...');\r\n    console.log((jquery__WEBPACK_IMPORTED_MODULE_1___default()));\r\n  },\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (banner);\r\n\n\n//# sourceURL=webpack://hjx-ssr-cli/./src/web/components/banner/banner.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _banner_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./banner.css */ \"./src/web/components/banner/banner.css\");\n/* harmony import */ var _banner_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_banner_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst banner = {\n  init() {\n    console.log('banner ...');\n    console.log((jquery__WEBPACK_IMPORTED_MODULE_1___default()));\n  },\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (banner);\n\n\n//# sourceURL=webpack://hjx-ssr-cli/./src/web/components/banner/banner.js?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_banner_banner_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/banner/banner.js */ \"./src/web/components/banner/banner.js\");\n\r\n_components_banner_banner_js__WEBPACK_IMPORTED_MODULE_0__.default.init();\r\n\n\n//# sourceURL=webpack://hjx-ssr-cli/./src/web/views/index/index-index.entry.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_banner_banner_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/banner/banner.js */ \"./src/web/components/banner/banner.js\");\n\n_components_banner_banner_js__WEBPACK_IMPORTED_MODULE_0__.default.init();\n\n\n//# sourceURL=webpack://hjx-ssr-cli/./src/web/views/index/index-index.entry.js?");
 
 /***/ })
 
