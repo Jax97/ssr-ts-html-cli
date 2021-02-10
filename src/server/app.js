@@ -11,7 +11,7 @@ import co from 'co';
 //   '@controllers': __dirname + '/controllers',
 //   '@models': __dirname + '/models',
 // });
-const app: Koa = new Koa();
+const app = new Koa();
 
 app.context.render = co.wrap(
   render({

@@ -1,10 +1,10 @@
 import { extend } from 'lodash';
 import { join } from 'path';
-type config = {
-  port: number;
-  viewDIR: string;
-};
-let config: config = {
+// type config = {
+//   port: number;
+//   viewDIR: string;
+// };
+let config = {
   port: 8000,
   viewDIR: join(__dirname, '..', 'views'),
 };

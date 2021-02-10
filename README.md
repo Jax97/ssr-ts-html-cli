@@ -19,6 +19,7 @@
 8. 配置controllers和koa-router，启动基本的多页面
 9. 配置models打通controller层和model层
 10. 使用koa-swig对模板进行解析
+11. gulp 数据清洗（treeShaking）gulp-rollup 原理是通过@rollup/replace-plugin设置某个变量的值为确定值，让gulp-rollup认为是废代码 扩展：prepack
 
 
 ```
@@ -26,22 +27,19 @@
 #### 客户端配置
 
 ```
-1. 配置 webpack ，yargs-parser 合并基本 webpack config 和其他环境的 webpack config\
+1. 配置 webpack ，yargs-parser 合并基本 webpack config 和其他环境的 webpack config
 2. 建立前端页面 views components 等
 3. 在 views 中引入的 HTML 除了要引入有 HTML 外，还要引入该 HTML 所需的 js，使用 webpack 及建立对应路由映射的 js 文件实现。
 4. 取views下的*.entry.js文件，匹配对应的key，将该key与文件路径对应上，并配置webpack打包出js文件。
+5. copy-webpack-plugin 将公共的compoents和banner copy到对应的文件夹路径。
+6. 脚本插入位置不对，手动修正，通过HtmlWebpackPlugin的生命周期结合webpack4自定义的插件去修正。
+7. 配置生产环境webpack，通过html-minifier将cpoy过来的html进行压缩，通过optimize-css-assets-webpack-plugin将copy过来的css进行压缩
 
 ```
 
 #### 共同配置
 
 1. 配置 typedoc 将 ts 的接口注释输出到 docs/tsdoc
-
-<!-- TODO -->
-
-2. 配置 scripty
-3. gulp 流清洗
-4. 前端性能监控
 
 ### 注意事项
 
