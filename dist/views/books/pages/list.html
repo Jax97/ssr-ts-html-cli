@@ -1,1 +1,19 @@
-{% extends '../layouts/laousel.html' %} {% block title%} 图书展示页 {% endblock %} {% block head %} {% endblock %} {% block content %} {% include "../../components/banner/banner.html" %}<h1>展示页面</h1>{% include "../../components/list/list.html" %} {% endblock %} {% block scripts %} {% endblock %}
+{% extends '../../layout/layout.html' %}
+{% block title%}
+图书展示页
+{% endblock %}
+
+{% block head %}
+<link href="/books-list.css" rel="stylesheet"></link>
+{% endblock %}
+
+{% block content %}
+
+<h1>展示页面</h1>
+{% include "../../../components/list/list.html" %}
+
+{% endblock %}
+
+{% block scripts %}
+<script src="/scripts/runtime.46ba1bcc.bundle.js"></script><script src="/scripts/books-list.6207fe0c.bundle.js"></script>
+{% endblock %}

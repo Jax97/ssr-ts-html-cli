@@ -7,6 +7,7 @@ import { join } from 'path';
 let config = {
   port: 8000,
   viewDIR: join(__dirname, '..', 'views'),
+  staticDir: join(__dirname, '..', 'assets'),
 };
 
 if (process.env.NODE_ENV == 'development') {

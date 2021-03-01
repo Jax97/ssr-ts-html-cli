@@ -34,6 +34,7 @@
 5. copy-webpack-plugin 将公共的compoents和banner copy到对应的文件夹路径。
 6. 脚本插入位置不对，手动修正，通过HtmlWebpackPlugin的生命周期结合webpack4自定义的插件去修正。
 7. 配置生产环境webpack，通过html-minifier将cpoy过来的html进行压缩，通过optimize-css-assets-webpack-plugin将copy过来的css进行压缩
+8. 通过pjax实现切页spa
 
 ```
 

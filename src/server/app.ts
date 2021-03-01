@@ -3,16 +3,16 @@ import config from './config/index';
 // import moduleAlias from 'module-alias';
 import routes from './controllers/index';
 const render = require('koa-swig');
-const { port, viewDIR } = config;
+const { port, viewDIR ,staticDir} = config;
 import co from 'co';
-
+import serve from 'koa-static';
 // moduleAlias.addAliases({
 //   '@root': __dirname,
 //   '@controllers': __dirname + '/controllers',
 //   '@models': __dirname + '/models',
 // });
 const app = new Koa();
-
+app.use(serve(staticDir));
 app.context.render = co.wrap(
   render({
     root: viewDIR,

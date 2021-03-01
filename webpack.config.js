@@ -55,7 +55,8 @@ const webpackConfig = {
   plugins: [..._plugins, new MiniCssExtractPlugin(), new AfterHtmlPlugin()],
   output: {
     path: join(__dirname, './dist/assets'),
-    filename: 'scripts/[name].[contenthash:8].js',
+    publicPath: '/',
+    filename: 'scripts/[name].[contenthash:8].bundle.js',
   },
   optimization: {
     // 提取runtime的公共model，减少每个chunk的体积

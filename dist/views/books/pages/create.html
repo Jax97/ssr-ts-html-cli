@@ -1,1 +1,13 @@
-{% include "../../components/banner/banner.html" %} {% block title %} 添加图书 {% endblock %} {% block head %} {% endblock %} {% block content %}<div><h1>添加图书页面</h1></div>{% endblock %} {% block scripts %} {% endblock %}
+{% extends '../../layout/layout.html' %}
+{% block title %}
+{% endblock %}
+{% block head %}
+<link href="/books-create.css" rel="stylesheet"></link>
+{% endblock %} {% block content %}
+<!-- <div>
+    <h1>添加图书页面</h1> -->
+    {% include "../../../components/add/add.html" %}
+<!-- </div> -->
+{% endblock %} {% block scripts %}
+<script src="/scripts/runtime.46ba1bcc.bundle.js"></script><script src="/scripts/books-create.62c75263.bundle.js"></script>
+{% endblock %}

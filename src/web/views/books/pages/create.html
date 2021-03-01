@@ -1,14 +1,13 @@
-{% include "../../components/banner/banner.html" %}
-
+{% extends '../../layout/layout.html' %}
 {% block title %}
-添加图书
 {% endblock %}
 {% block head %}
 <!-- injectcss -->
 {% endblock %} {% block content %}
-<div>
-    <h1>添加图书页面</h1>
-</div>
+<!-- <div>
+    <h1>添加图书页面</h1> -->
+    {% include "../../../components/add/add.html" %}
+<!-- </div> -->
 {% endblock %} {% block scripts %}
 <!-- injectjs -->
 {% endblock %}
