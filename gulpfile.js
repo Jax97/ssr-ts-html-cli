@@ -32,7 +32,10 @@ function buildDev() {
     .pipe(
       babel({
         babelrc: false,
-        plugins: ['@babel/plugin-transform-modules-commonjs'],
+        plugins: [
+          ['@babel/plugin-proposal-decorators', { legacy: true }],
+          '@babel/plugin-transform-modules-commonjs',
+        ],
       })
     )
     .pipe(gulp.dest('./dist'));
@@ -48,7 +51,10 @@ function buildProd() {
       babel({
         babelrc: false,
         ignore: [cleanEntry],
-        plugins: ['@babel/plugin-transform-modules-commonjs'],
+        plugins: [
+          ['@babel/plugin-proposal-decorators', { legacy: true }],
+          '@babel/plugin-transform-modules-commonjs',
+        ],
       })
     )
     .pipe(gulp.dest('./dist'));

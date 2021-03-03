@@ -6,13 +6,7 @@ const render = require('koa-swig');
 const { port, viewDIR, staticDir } = config;
 import co from 'co';
 import serve from 'koa-static';
-import errorHandler from './middlewares/errorHandler';
-import { configure, getLogger } from 'log4js';
-configure({
-  appenders: { cheese: { type: 'file', filename: './logs/ssr.log' } },
-  categories: { default: { appenders: ['cheese'], level: 'error' } },
-});
-const logger = getLogger('cheese');
+
 // moduleAlias.addAliases({
 //   '@root': __dirname,
 //   '@controllers': __dirname + '/controllers',
@@ -31,7 +25,7 @@ app.context.render = co.wrap(
 );
 
 routes(app);
-errorHandler.error(app, logger);
+
 // app.use(async (ctx) => {
 //   ctx.body = 'hello world111';
 // });

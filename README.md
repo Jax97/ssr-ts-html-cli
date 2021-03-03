@@ -20,6 +20,7 @@
 9. 配置models打通controller层和model层
 10. 使用koa-swig对模板进行解析
 11. gulp 数据清洗（treeShaking）gulp-rollup 原理是通过@rollup/replace-plugin设置某个变量的值为确定值，让gulp-rollup认为是废代码 扩展：prepack
+12. 使用awilix awilix-koa实现IOC
 
 
 ```
@@ -34,7 +35,9 @@
 5. copy-webpack-plugin 将公共的compoents和banner copy到对应的文件夹路径。
 6. 脚本插入位置不对，手动修正，通过HtmlWebpackPlugin的生命周期结合webpack4自定义的插件去修正。
 7. 配置生产环境webpack，通过html-minifier将cpoy过来的html进行压缩，通过optimize-css-assets-webpack-plugin将copy过来的css进行压缩
-8. 通过pjax实现切页spa
+8. 通过pjax实现切页spa 分别处理html和js
+9. 在用户网速不错的情况下，使用quicklink缓存其他页面.
+10. basket.js缓存load下来的页面
 
 ```
 

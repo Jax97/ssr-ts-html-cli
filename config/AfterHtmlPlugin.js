@@ -5,7 +5,7 @@ function createHtml(type, array) {
   let result = '';
   if (type === 'js') {
     array.forEach((url) => {
-      result += `<script src="${url}"></script>`;
+      result += `<script class="lazyload-js" src="${url}"></script>`;
     });
   }
   if (type === 'css') {

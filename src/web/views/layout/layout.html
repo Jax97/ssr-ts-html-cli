@@ -13,8 +13,12 @@
     </div>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/quicklink/2.0.0-beta/quicklink.umd.js"></script>
     <script>
-      $(document).pjax('a', '#app')
+      $(document).pjax('a', '#app');
+      window.addEventListener('load', () => {
+          quicklink.listen();
+        });
     </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
     {% block scripts %}{% endblock %}
